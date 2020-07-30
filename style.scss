@@ -1,0 +1,430 @@
+*:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #243447;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+@mixin flex-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+$contrast-color: hsl(338, 73%, 45%);
+$margin-align: 5vh 15vw;
+$nav-color: hsl(214, 41%, 10%);
+
+nav {
+  height: 8vh;
+  ul,
+  li,
+  a,
+  .burger,
+  .logo {
+    background-color: $nav-color;
+  }
+  @include flex-nav();
+  background-color: $nav-color;
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: "Sacramento", cursive;
+  }
+  .nav-links {
+    @include flex-nav();
+    width: 40%;
+  }
+  li {
+    color: #f85b95;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    cursor: default;
+  }
+  a {
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+  }
+}
+
+.burger {
+  display: none;
+  div {
+    height: 0.3rem;
+    width: 2rem;
+    margin-top: 5px;
+    background-color: white;
+  }
+}
+// this is for the popup modal
+.form-container {
+  color: grey;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+form {
+  background-color: $nav-color;
+  border-radius: 15px;
+  .modal-title {
+    background: none;
+    border: none;
+  }
+  .close-modal-btn {
+    border: none;
+    float: right;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    width: 2vw;
+    position: absolute;
+    right: 34rem;
+    top: 5rem;
+    background: none;
+  }
+  .close-modal-btn:hover {
+    color: $contrast-color;
+  }
+  input {
+    background-color: white;
+    color: #333333;
+  }
+}
+.form-modal {
+  width: 50%;
+  display: grid;
+  margin: 5vh auto;
+}
+.form-container-display {
+  display: block;
+}
+.form-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid white;
+  margin: 2vh 2vw;
+  padding: 10rem;
+
+  .modal-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+  input {
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    outline: none;
+    font-size: 2rem;
+  }
+  .modal-submit-btn {
+    padding: 1.2rem 3rem;
+    color: white;
+  }
+  button {
+    outline: none;
+  }
+
+  .modal-submit-btn:hover {
+    background-color: $contrast-color;
+  }
+  .modal-error {
+    background: none;
+    color: $contrast-color;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+.form-background-opacity {
+  opacity: 0.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: $margin-align;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 15vh;
+  margin-top: 10vh;
+  h3 {
+    font-size: 2.4rem;
+    color: $contrast-color;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  .main-job-title,
+  .main-description {
+    color: #8892b0;
+  }
+  .main-job-title {
+    width: 80%;
+  }
+  .main-description {
+    width: 40vw;
+    font-size: 2rem;
+    margin-top: 3rem;
+    line-height: 3rem;
+  }
+
+  button {
+    width: 15vw;
+    height: 10vh;
+    margin-top: 10vh;
+    border: 0.15rem solid $contrast-color;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    background-color: none;
+    word-spacing: 0.5rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(248, 91, 149, 0.5);
+    outline: none;
+  }
+}
+
+.section-align {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-bottom: 10vh;
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: $margin-align;
+  }
+  .section-title {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+  }
+  .section-line {
+    background-color: white;
+    height: 0.15rem;
+    width: 40rem;
+  }
+  .about-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: $margin-align;
+  }
+}
+.about,
+.about-description,
+.about-title,
+.technology-list,
+.my-image,
+.about-flex {
+  background-color: $nav-color;
+}
+.about .title {
+  background-color: $nav-color;
+}
+img {
+  width: 35vw;
+  margin-top: 2rem;
+  border-radius: 0.75rem;
+}
+.about-description {
+  font-size: 2rem;
+  width: 30vw;
+  p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: $nav-color;
+  }
+  ul {
+    background-color: $nav-color;
+  }
+  li {
+    margin-top: 1.5rem;
+    background-color: $nav-color;
+  }
+}
+
+.technology-list {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+  .technologies1 {
+    margin-right: 2rem;
+  }
+}
+
+.section-content-align {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: $margin-align;
+  .covid-project-image {
+    margin-top: 10vh;
+  }
+  img {
+    margin-bottom: 15vh;
+  }
+  p {
+    font-size: 2rem;
+    margin: 0 0 5vh 5vw;
+  }
+  .technologies-used {
+    display: flex;
+    p {
+      font-size: 1.5rem;
+      color: grey;
+      font-weight: 600;
+    }
+  }
+}
+
+.contact {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10vh;
+  background-color: $nav-color;
+  h1,
+  p,
+  a,
+  .social-icons,
+  .contact {
+    background-color: $nav-color;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $nav-color;
+    h1 {
+      font-family: "Sacramento", cursive;
+      font-size: 5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .social-icons {
+      margin-top: 2vh;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+    nav {
+      .nav-links {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        @include flex-nav();
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+      a {
+        font-size: 3rem;
+      }
+      a:hover {
+        color: $contrast-color;
+      }
+      .burger {
+        display: block;
+      }
+      .nav-active {
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  main {
+    margin: 10vh;
+    h1 {
+      font-size: 6rem;
+      margin-top: 1rem;
+    }
+    p {
+      min-width: 60vw;
+    }
+    button {
+      width: 30vw;
+      height: 8vh;
+      font-size: 2rem;
+    }
+  }
+  .section-title {
+    font-size: 2.25rem;
+    min-width: 30vw;
+  }
+  .section-line {
+    width: 30rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .about-flex {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 70vw;
+    }
+    .about-description {
+      width: 100%;
+    }
+  }
+  .form-modal {
+    width: 90%;
+    .close-modal-btn {
+      right: 5rem;
+    }
+  }
+  .covid-project,
+  .todo-list-project,
+  .bmi-calculator-project {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 70vw;
+    }
+  }
+  .section-text {
+    width: 90vw;
+  }
+}
