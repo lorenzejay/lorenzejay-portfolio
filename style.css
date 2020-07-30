@@ -69,6 +69,10 @@ nav a {
   font-size: 2rem;
 }
 
+nav a:hover {
+  color: #c71f5c;
+}
+
 .burger {
   display: none;
 }
