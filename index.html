@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorenze's Portfolio</title>
+    <script src="https://use.fontawesome.com/c41250b912.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <h1 class="logo">Lorenze Jay</h1>
+        <ul class="nav-links">
+          <li>
+            01.
+            <a href="#about">About</a>
+          </li>
+          <li>
+            02.
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            0.3.
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="burger1"></div>
+          <div class="burger2"></div>
+          <div class="burger3"></div>
+        </div>
+      </nav>
+    </div>
+    <main class="main">
+      <h3>Hi, my name is</h3>
+      <h1 class="main-name">Lorenze Hernandez.</h1>
+      <h1 class="main-job-title">Mixing Technology and Creativity.</h1>
+      <p class="main-description">
+        I am a software developer based in Los Angeles, CA specialized in building exceptional
+        websites, applications and everything in between.
+      </p>
+      <button type="button" class="get-in-touch-btn">Get In Touch</button>
+    </main>
+
+    <!-- this is a popup that comes from pressing on the input value  -->
+    <div class="form-container">
+      <form action="" class="form-modal">
+        <button type="button" class="close-modal-btn">&times</button>
+        <h1 class="modal-title">Contact Me</h1>
+        <div class="modal-error"></div>
+        <input type="text" id="modal-fname" placeholder="First Name" />
+        <input type="text" id="modal-Lname" placeholder="Last Name" />
+        <input type="text" id="modal-email" placeholder="Email" />
+        <button class="modal-submit-btn">Submit</button>
+      </form>
+    </div>
+    <div class="form-background-opacity"></div>
+    <!-- this is a popup that comes from pressing on the input value  -->
+
+    <section class="about section-align" id="about">
+      <about class="title">
+        <h1 class="section-title about-title">01. About</h1>
+        <div class="section-line about-line"></div>
+      </about>
+
+      <div class="about-flex">
+        <div class="about-description">
+          <p>Hello, I am Lorenze, a Front-End Web Developer based in Los Angeles, CA.</p>
+          <p>
+            I enjoy creating anything that lives in the internet like websites, applications or
+            anything technology related. My goal is to build products that fit everyone's needs.
+          </p>
+          <p>I am self-taught, driven, and willing to learn from others.</p>
+          <p>
+            Some technologies I have experience with and some I am currently learning:
+          </p>
+          <div class="technology-list">
+            <ul class="technologies1">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul class="technologies2">
+              <li>Vue</li>
+              <li>PHP</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </div>
+        <div class="my-image">
+          <a href="https://github.com/lorenzejay">
+            <img src="./DSC02193.jpg" alt="" a />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section-align" id="work">
+      <about class="title">
+        <h1 class="section-title">02. Works</h1>
+        <div class="section-line"></div>
+      </about>
+      <div class="section-content-align covid-project">
+        <div class="section-image">
+          <a href="">
+            <img
+              class="covid-project-image"
+              src="./screencapture-file-C-Users-HP-Desktop-Personal-Projects-covid-19-API-index-html-2020-07-28-21_42_43.png"
+              alt="todo-list"
+            />
+          </a>
+        </div>
+        <div class="section-text">
+          <p>Covid-19 Live Data</p>
+          <p>
+            Project using Covid-19 Data API to list out total cases, total deaths, and total
+            recovered.
+          </p>
+          <p>
+            You can see results from 186 countries. Values update on a daily basis.
+          </p>
+          <div class="technologies-used">
+            <p>Covid-19 API</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-content-align todo-list-project">
+        <div class="section-image">
+          <a href="">
+            <img
+              src="./screencapture-lorenzejay-github-io-todo-list-2020-07-28-21_26_22.png"
+              alt="todo-list"
+            />
+          </a>
+        </div>
+
+        <div class="section-text section-text-even">
+          <p>Minimalistic To Do Application</p>
+          <p>My first project utlizing HTML, CSS, and Vanilla Javascript</p>
+          <p>
+            What I added which is different from oridinary To Do Applcations was it has settings in
+            which users can change from a light theme to a dark theme.
+          </p>
+          <div class="technologies-used">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-content-align bmi-calculator-project">
+        <div class="section-image">
+          <a href="https://lorenzejay.github.io/bmi-calculator/">
+            <img src="./bmi-calculator-app.png" alt="bmi-calculator-app" />
+          </a>
+        </div>
+        <div class="section-text">
+          <p>Body Mass Index App</p>
+          <p>Implementation of input and skills parallel to form validations.</p>
+          <p>
+            Use this to check your body mass index, following the guidelines used by reputable sites
+            like NHLBI.NIH or the CDC
+          </p>
+          <div class="technologies-used">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-align" id="contact">
+      <footer>
+        <h1>Lorenze Jay</h1>
+        <p>Lorenzejay@gmail.com</p>
+        <div class="social-icons">
+          <a class="fa fa-instagram fa-lg" href="https://www.instagram.com/lorenzejay.tech/"></a>
+          <a class="fa fa-twitter fa-lg" href="https://twitter.com/lorenzejaay"></a>
+          <a class="fa fa-facebook fa-lg" href="https://www.facebook.com/lorenze.hernandez"></a>
+          <a class="fa fa-github fa-lg" href="https://github.com/lorenzejay"></a>
+        </div>
+      </footer>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
