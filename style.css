@@ -249,8 +249,7 @@ main .main-description {
 }
 
 main button {
-  width: 15vw;
-  height: 10vh;
+  padding: 2rem 3rem;
   margin-top: 10vh;
   border: 0.15rem solid #c71f5c;
   color: white;
@@ -466,9 +465,9 @@ img {
   body {
     position: relative;
     overflow-x: hidden;
+    height: 100%;
   }
-  html nav .nav-links,
-  body nav .nav-links {
+  nav .nav-links {
     position: absolute;
     right: 0;
     top: 8vh;
@@ -493,20 +492,16 @@ img {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  html nav a,
-  body nav a {
+  nav a {
     font-size: 3rem;
   }
-  html nav a:hover,
-  body nav a:hover {
+  nav a:hover {
     color: #c71f5c;
   }
-  html nav .burger,
-  body nav .burger {
+  nav .burger {
     display: block;
   }
-  html nav .nav-active,
-  body nav .nav-active {
+  nav .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
@@ -514,16 +509,14 @@ img {
     margin: 10vh;
   }
   main h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 1rem;
   }
   main p {
     min-width: 60vw;
   }
   main button {
-    width: 30vw;
-    height: 8vh;
-    font-size: 2rem;
+    padding: 1.5rem 3rem;
   }
   .section-title {
     font-size: 2.25rem;

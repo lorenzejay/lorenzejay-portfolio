@@ -192,8 +192,7 @@ main {
   }
 
   button {
-    width: 15vw;
-    height: 10vh;
+    padding: 2rem 3rem;
     margin-top: 10vh;
     border: 0.15rem solid $contrast-color;
     color: white;
@@ -337,52 +336,49 @@ img {
     }
   }
 }
-
 @media (max-width: 768px) {
   html,
   body {
     position: relative;
     overflow-x: hidden;
-    nav {
-      .nav-links {
-        position: absolute;
-        right: 0;
-        top: 8vh;
-        height: 92vh;
-        @include flex-nav();
-        flex-direction: column;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-      }
-      a {
-        font-size: 3rem;
-      }
-      a:hover {
-        color: $contrast-color;
-      }
-      .burger {
-        display: block;
-      }
-      .nav-active {
-        transform: translateX(0%);
-      }
+    height: 100%;
+  }
+  nav {
+    .nav-links {
+      position: absolute;
+      right: 0;
+      top: 8vh;
+      height: 92vh;
+      @include flex-nav();
+      flex-direction: column;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    a {
+      font-size: 3rem;
+    }
+    a:hover {
+      color: $contrast-color;
+    }
+    .burger {
+      display: block;
+    }
+    .nav-active {
+      transform: translateX(0%);
     }
   }
-
   main {
     margin: 10vh;
     h1 {
-      font-size: 6rem;
+      font-size: 5rem;
       margin-top: 1rem;
     }
     p {
       min-width: 60vw;
     }
     button {
-      width: 30vw;
-      height: 8vh;
-      font-size: 2rem;
+      padding: 1.5rem 3rem;
     }
   }
   .section-title {
