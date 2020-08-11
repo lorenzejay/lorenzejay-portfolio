@@ -552,6 +552,10 @@ img {
     font-size: 5rem;
     margin-top: 1rem;
   }
+  main h2 {
+    font-size: 4rem;
+    margin: 1.5vh 0;
+  }
   main p {
     min-width: 60vw;
   }
